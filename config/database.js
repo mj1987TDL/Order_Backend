@@ -11,9 +11,10 @@ if(hostname!="rlpv10000")
 }
 
 var mysqlConnection = mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    database:'order',
+    host:'db4free.net',
+    user:'mjtdl1987',
+    database:'order_management',
+	password:'Pin129Drop',
 	timezone: 'utc',
     multipleStatements:true
 });
@@ -22,7 +23,7 @@ mysqlConnection.connect((err) => {
     if (!err)
         console.log('Success');
     else {
-        logger.error(err.message);
+        //logger.error(err.message);
         return console.error('error: ' + err.message);
 
     }
